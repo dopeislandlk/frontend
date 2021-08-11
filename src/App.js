@@ -6,6 +6,7 @@ function App() {
       <div className="Container">
         <img className="image" src={process.env.PUBLIC_URL+"/images/dopeislandlogo.png"}></img>
         <h1 className="ComingSoon">Comming soon.....</h1>
+        <h1 className="ComingSoon">2021/08/11</h1>
       </div>
     </div>
   );
