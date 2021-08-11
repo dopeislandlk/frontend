@@ -1,13 +1,13 @@
 import './App.css';
+import Home from "./pages/Home"
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <div className="Container">
-        <img className="image" src={process.env.PUBLIC_URL+"/images/dopeislandlogo.png"}></img>
-        <h1 className="ComingSoon">Comming soon.....</h1>
-        <h1 className="ComingSoon">2021/08/11</h1>
-      </div>
+      <Home></Home>
     </div>
   );
 }
