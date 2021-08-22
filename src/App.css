@@ -1,8 +1,20 @@
+
+
 .App {
   display: flex;
-  background-color: rgb(39, 39, 39);
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(78,78,78,1) 52%, rgba(0,0,0,1) 100%); 
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 
-
+.comingsoon{
+  width: 100%;
+  height:auto;
+  text-align: center;
+  color:white;
+  padding: 0;
+  
+}

@@ -1,4 +1,6 @@
 .HomeBody{
-    width:70%;
-    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

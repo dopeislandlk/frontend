@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Wrapper, BannerImage } from './styles/styles';
+import { Wrapper,SearchWrapper,SeacrhInput,SearchButton} from './styles/styles';
 
 
 const Header = ({children}) => {
@@ -10,8 +10,12 @@ const Header = ({children}) => {
  
 export default Header;
 
-Header.Banner=()=>{
+Header.Search = () =>{
     return (
-        <BannerImage src={process.env.PUBLIC_URL+"/images/banner.png"}></BannerImage>
-    );
+        <SearchWrapper>
+            <SeacrhInput placeholder="what's in your mind"></SeacrhInput>
+            <SearchButton>Go</SearchButton>
+        </SearchWrapper>
+    )
 }
+

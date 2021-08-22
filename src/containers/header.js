@@ -5,7 +5,7 @@ const HeaderWrapper = () => {
     return ( 
         <div>
             <Header>
-                <Header.Banner></Header.Banner>
+                <Header.Search></Header.Search>
             </Header>
         </div>
      );
