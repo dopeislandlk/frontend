@@ -4,56 +4,63 @@ import styled from "styled-components/macro";
 export const Wrapper = styled.div`
 background-color:#1c1c1c;
 width:70vw;
-height:40%;
 display:flex;
-align-items:center;
-justify-content:center;
+flex-direction:column;
 
 background-image:url(${process.env.PUBLIC_URL+"/images/tropical.png"});
 background-size: cover;
 
-`;
-
-export const Logo = styled.img`
-
-width:15%;
+@media(max-width:1000px){
+    width:100vw;
+}
 
 `;
 
-export const TextWrapper = styled.div`
-
-width:60%;
-
-`;
-
-export const RegisterWrapper = styled.div`
-display:flex;
-justify-content:center;
-
-`;
-
-export const RegisterInput = styled.input`
+export const FooterTop= styled.div`
 
 width:100%;
-height:2rem;
-border:none;
-outline:none;
-border-radius:2px 0 0 2px;
-padding:0.5rem;
-padding-left:1rem;
+height:100px;
+background-color:red;
+
+display: grid;
+grid-template-columns: 20% 50% 30%;
+
+`
+
+export const ContactArea = styled.div`
+
+background-color:green;
+height:100px;
+margin:0;
+`;
+
+export const InfoArea = styled.div`
+
+background-color:blue;
+height:100px;
 
 `;
 
-export const RegisterButton = styled.button`
+export const Logo = styled.div`
 
-border:none;
-padding:0 1rem 0 1rem;
-border-radius: 0 2px 2px 0;
+background-color:green;
+height:100px;
+
+`
+
+export const FooterBottom = styled.div`
+text-align:center;
+width:100%;
 color:white;
-transition: 0.5s;
-background-color:#8f000a;
-&:hover {
-    background-color:#b3000c;
-}
+
+`;
+
+
+export const ContactHeader =styled.h1`
+color:white;
+font-size:1.5em;
+width:100%;
+background-color:red;
+margin:0;
 
 `;

@@ -1,34 +1,47 @@
+import { FormHelperText, styled } from '@material-ui/core';
 import React, { Children, Component } from 'react';
-import {Wrapper, Logo, TextWrapper, RegisterWrapper, RegisterInput, RegisterButton} from "./styles/styles"
+import {Wrapper,FooterTop,ContactArea, InfoArea, Logo, FooterBottom, ContactHeader} from "./styles/styles"
 const Footer = ({children}) => {
     return ( 
         <Wrapper>{children}</Wrapper>
      );
 }
 
-Footer.Logo =()=>{
-    return(
-        <Logo src={process.env.PUBLIC_URL+"/images/logo.png"}></Logo>
+
+Footer.FooterTop =({children})=>{
+    return (
+        <FooterTop>{children}</FooterTop>
     )
 }
 
-Footer.TextWrapper =()=>{
+
+Footer.FooterBottom =({children})=>{
     return (
-        <TextWrapper>
-            <h1>Title</h1>
-            <h1>Title</h1>
-            <h1>Title</h1>
-            <h1>Title</h1>
-        </TextWrapper>
+        <FooterBottom>{children}</FooterBottom>
     )
 }
 
-Footer.RegisterWrapper =()=>{
+Footer.Logo=()=>{
     return (
-        <RegisterWrapper>
-            <RegisterInput placeholder="enter you email"></RegisterInput>
-            <RegisterButton>follow</RegisterButton>
-        </RegisterWrapper>
+        <Logo></Logo>
     )
 }
+
+Footer.InfoArea=()=>{
+    return (
+        <InfoArea></InfoArea>
+    )
+}
+
+Footer.ContactArea=(props)=>{
+    return (
+        <ContactArea>
+
+           <ContactHeader>{props.header}</ContactHeader>
+           <h2>daham</h2>
+
+        </ContactArea>
+    )
+}
+
 export default Footer;

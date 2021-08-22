@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import "./body.css"
 const BodyContainer = () => {
     return ( 
-        <div style={{backgroundColor:"white",minHeight:"40vh", width:"70vw"}}>
+        <div className="container">
 
         </div>
      );

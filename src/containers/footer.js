@@ -3,9 +3,17 @@ import Footer from  "../components/Footer"
 const FooterContainer = () => {
     return ( 
         <Footer>
-            <Footer.Logo></Footer.Logo>
-            <Footer.TextWrapper></Footer.TextWrapper>
-            <Footer.RegisterWrapper></Footer.RegisterWrapper>
+            
+            <Footer.FooterTop>
+                <Footer.Logo></Footer.Logo>
+                <Footer.InfoArea></Footer.InfoArea>
+                <Footer.ContactArea header=" Lets talk"></Footer.ContactArea>
+            </Footer.FooterTop>
+
+
+            <Footer.FooterBottom> developed by dopeislandlk@2021</Footer.FooterBottom>
+
+
         </Footer>
      );
 }
